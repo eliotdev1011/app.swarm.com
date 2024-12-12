@@ -1,0 +1,55 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.suffix ::after {
+  content: '%';
+  position: absolute;
+  right: 10px;
+  top: 24px;
+  font-weight: 700;
+}
+
+button {
+  outline: none;
+}
+
+.jXpUNy::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+/* onboarding modals styles */
+:root {
+  --onboarding-wallet-select-modal: 999999;
+  --onboarding-wallet-modal: 9999999;
+
+  --onboard-modal-z-index: var(--onboarding-wallet-select-modal);
+  /* WalletConnect connect modal */
+  --wcm-z-index: var(--onboarding-wallet-modal) !important;
+  /* Trezor connect modal */
+  --onboard-account-select-modal-z-index: var(--onboarding-wallet-modal);
+  /* Ledger connect modal */
+  .dtieGQ, .kfWweg {
+    z-index: var(--onboarding-wallet-modal);
+  }
+}
